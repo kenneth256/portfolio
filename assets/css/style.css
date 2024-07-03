@@ -209,8 +209,9 @@ height: 10.5 rem;
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+  
 }
-.contact-form-container input {
+.contact-form-container textarea {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
