@@ -31,29 +31,42 @@
 
   <body>
     <!-- Navbar -->
-    <nav>
-      <h1>MAGOMBE KENNETH DAVID</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+    <nav data-testid="navbar">
+      <h1 data-testid="kennethD">MAGOMBE KENNETH DAVID</h1>
+      <ul data-testid="navigation" class="navigation">
+        <li data-testid="about-link">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li data-testid="skills-link">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li data-testid="projects-link">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li data-testid="contact-link">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
       </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <button class="burger-menu" id="burger-menu" data-testid="burger-menu">
+        <ion-icon
+          class="bars"
+          name="menu-outline"
+          data-testid="menu-icon"
+        ></ion-icon>
       </button>
     </nav>
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <section class="hero" id="about" data-testid="hero-section">
       <img
         src="assets/images/kenny.jpg"
         alt="jane-doe"
         loading="lazy"
         class="hero-img"
+        data-testid="hero-image"
       />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
+      <div class="bio animate__animated animate__shakeX" data-testid="bio">
+        <h2 class="bio-title" data-testid="bio-title">About Me</h2>
+        <p class="bio-text" data-testid="bio-text">
           Hello! I'm Kenneth, a passionate front-end developer from AltSchool
           Africa. I have a strong foundation in HTML, CSS, and JavaScript. I
           design intuitive interfaces that engage users with seamless
@@ -66,9 +79,9 @@
     </section>
 
     <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
+    <section class="more-about" data-testid="more-about">
+      <h2 data-testid="more-about-title">More About Me</h2>
+      <p data-testid="more-about-text">
         Outside of coding, I'm an adventure enthusiast who loves exploring the
         great outdoors. You can find me hiking tough trails. I camp under the
         stars. I also enjoy quiet moments in nature. I'm also a sports fan,
@@ -79,143 +92,180 @@
         connect and share some adventures!
       </p>
     </section>
-    <section class="more-about">
-      <h2>My Goals</h2>
-     
-  <p>
-    Here are my plans in tech for the next two years.
-  </p>
-    <ol>
-    <li>Learn HTML, CSS, JavaScript, and popular frameworks like React or Vue.</li>
-    
-  <li>Build 10 personal projects, including a portfolio website.</li>
-    
-<li>Complete online courses or certifications like FreeCodeCamp or Frontend Masters.</li>
-    
-
-    
-      <li>Network with professionals in the industry through events or online communities.</li>
-    
-    <li>Create a strong LinkedIn profile and online presence.</li>
-    
-  <li>Prepare for common frontend interview questions and practice coding challenges</li>
-    
-   
-    
-        <li>Apply for frontend developer positions and aim for at least five interviews.</li>
-    
-        <li>Secure a full-time or freelance front-end developer role within six months.</li>
-        <li>Write blog posts or create videos sharing my learning journey and tips.</li>
-    
-        <li>Speak at meetups or events to inspire and guide newcomers in tech.</li>
-    
-        <li>Mentor at least 2 individuals in their frontend development journey.</li>
+    <section class="more-about" data-testid="goals">
+      <h2 data-testid="goals-title">My Goals</h2>
+      <p data-testid="goals-text">
+        Here are my plans in tech for the next two years.
+      </p>
+      <ol data-testid="goals-list">
+        <li data-testid="goal-1">
+          Learn HTML, CSS, JavaScript, and popular frameworks like React or Vue.
+        </li>
+        <li data-testid="goal-2">
+          Build 10 personal projects, including a portfolio website.
+        </li>
+        <li data-testid="goal-3">
+          Complete online courses or certifications like FreeCodeCamp or
+          Frontend Masters.
+        </li>
+        <li data-testid="goal-4">
+          Network with professionals in the industry through events or online
+          communities.
+        </li>
+        <li data-testid="goal-5">
+          Create a strong LinkedIn profileand online presence.
+        </li>
+        <li data-testid="goal-6">
+          Prepare for common frontend interview questions and practice coding
+          challenges
+        </li>
+        <li data-testid="goal-7">
+          Apply for frontend developer positions and aim for at least five
+          interviews.
+        </li>
+        <li data-testid="goal-8">
+          Secure a full-time or freelance front-end developer role within six
+          months.
+        </li>
+        <li data-testid="goal-9">
+          Write blog posts or create videos sharing my learning journey and
+          tips.
+        </li>
+        <li data-testid="goal-10">
+          Speak at meetups or events to inspire and guide newcomers in tech.
+        </li>
+        <li data-testid="goal-11">
+          Mentor at least 2 individuals in their frontend development journey.
+        </li>
       </ol>
     </section>
 
     <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
+    <section class="skills" id="skills" data-testid="skills-section">
+      <h2 class="skill-header" data-testid="skills-title">My Top Skills</h2>
 
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
+      <div class="skills-wrapper" data-testid="skills-wrapper">
+        <div
+          class="first-set animate__animated animate__pulse"
+          data-testid="first-set"
+        >
           <img
             src="assets/icons/html5.png"
             alt="HTML5"
             loading="lazy"
             class="icon icon-card"
+            data-testid="html-icon"
           />
           <img
             src="assets/icons/css3.svg"
             alt="CSS3"
             loading="lazy"
             class="icon icon-card"
+            data-testid="css-icon"
           />
           <img
             src="assets/icons/javascript.svg"
             alt="JavaScript"
             loading="lazy"
             class="icon icon-card"
+            data-testid="js-icon"
           />
         </div>
-        <div class="second-set">
+        <div class="second-set" data-testid="second-set">
           <img
             src="assets/icons/react.svg"
             alt="React"
             loading="lazy"
             class="icon icon-card"
+            data-testid="react-icon"
           />
           <img
             src="assets/icons/git.svg"
             alt="Git"
             loading="lazy"
             class="icon icon-card"
+            data-testid="git-icon"
           />
           <img
             src="assets/icons/vue.svg"
             alt="Vue.js"
             loading="lazy"
             class="icon icon-card"
+            data-testid="vue-icon"
           />
           <img
             src="assets/icons/typescript.svg"
             alt="TypeScript"
             loading="lazy"
             class="icon icon-card"
+            data-testid="ts-icon"
           />
         </div>
       </div>
     </section>
 
     <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
+    <section class="projects" id="projects" data-testid="projects-section">
+      <h2 class="projects-title" data-testid="projects-title">
+        Some of my Recent Projects
+      </h2>
+      <div class="projects-container" data-testid="projects-container">
+        <div class="project-container project-card" data-testid="project-1">
           <img
             src="assets/icons/Vowels.png"
             alt="vowel counter"
             loading="lazy"
             class="project-pic"
+            data-testid="project-1-image"
           />
-          <h3 class="project-title">Vowel Counter</h3>
-          <p class="project-details">
+          <h3 class="project-title" data-testid="project-1-title">
+            Vowel Counter
+          </h3>
+          <p class="project-details" data-testid="project-1-text">
             A simple web app that counts the number of vowels in a given text.
           </p>
           <a
             href="https://vowelcount-kenneth.netlify.app/"
             target="_blank"
             class="project-link"
+            data-testid="project-1-link"
             >Check it Out</a
           >
         </div>
-        <div class="project-container project-card">
+        <div class="project-container project-card" data-testid="project-2">
           <img
             src="assets/icons/stopwatch.png"
             alt="stop watch"
             loading="lazy"
             class="project-pic"
+            data-testid="project-2-image"
           />
-          <h3 class="project-title">Stop watch</h3>
-          <p class="project-details">
+          <h3 class="project-title" data-testid="project-2-title">
+            Stop watch
+          </h3>
+          <p class="project-details" data-testid="project-2-text">
             A simple web app that is used for timing.
           </p>
           <a
             href="https://stop2watch.netlify.app/"
             target="_blank"
             class="project-link"
+            data-testid="project-2-link"
             >Check it Out</a
           >
         </div>
-        <div class="project-container project-card">
+        <div class="project-container project-card" data-testid="project-3">
           <img
             src="assets/icons/counter.png"
             alt="greeny-earth"
             loading="lazy"
             class="project-pic"
+            data-testid="project-3-image"
           />
-          <h3 class="project-title">Counter Application</h3>
-          <p class="project-details">
+          <h3 class="project-title" data-testid="project-3-title">
+            Counter Application
+          </h3>
+          <p class="project-details" data-testid="project-3-text">
             A simple web app that counts the number of clicks. with ability to
             decrease and reset to zero.
           </p>
@@ -223,6 +273,7 @@
             href="https://counterappz.netlify.app/"
             target="_blank"
             class="project-link"
+            data-testid="project-3-link"
             >Check it Out</a
           >
         </div>
@@ -230,12 +281,12 @@
     </section>
 
     <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
+    <section class="contact" id="contact" data-testid="contact-section">
+      <h2 data-testid="contact-title">Get In Touch With Me</h2>
+      <div class="contact-form-container" data-testid="contact-form-container">
+        <div class="contact-form" data-testid="contact-form">
           <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
+            <div class="form-control" data-testid="form-control-1">
               <label for="name">Name</label>
               <input
                 type="text"
@@ -244,9 +295,10 @@
                 placeholder="Enter Your Name"
                 class="input-field"
                 required
+                data-testid="name-input"
               />
             </div>
-            <div class="form-control">
+            <div class="form-control" data-testid="form-control-2">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -255,9 +307,10 @@
                 placeholder="Enter Your Email"
                 class="input-field"
                 required
+                data-testid="email-input"
               />
             </div>
-            <div class="form-control">
+            <div class="form-control" data-testid="form-control-3">
               <label for="message">Message</label>
               <textarea
                 id="message"
@@ -267,6 +320,7 @@
                 name="message"
                 class="input-field"
                 required
+                data-testid="message-input"
               ></textarea>
             </div>
             <input
@@ -274,6 +328,7 @@
               value="Submit"
               id="submit-btn"
               class="submit-btn"
+              data-testid="submit-btn"
             />
           </form>
         </div>
@@ -281,13 +336,14 @@
     </section>
 
     <!-- Social media accounts -->
-    <div class="socials">
+    <div class="socials" data-testid="socials">
       <a href="https://twitter.com/Kenneth73706586" target="_blank">
         <img
           src="assets/icons/twitter.gif"
           alt="Twitter"
           loading="lazy"
           class="socicon"
+          data-testid="twitter-icon"
         />
       </a>
       <a href="https://wa.me/qr/FKZ55Z3EDD5PN1" target="_blank">
@@ -296,35 +352,57 @@
           alt="WhatsApp"
           loading="lazy"
           class="socicon"
+          data-testid="whatsapp-gif"
         />
       </a>
-      <a href="https://www.linkedin.com/in/kenneth-david-209a29168/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/kenneth-david-209a29168/"
+        target="_blank"
+      >
         <img
           src="assets/icons/linkedin.gif"
           alt="LinkedIn"
           loading="lazy"
           class="socicon"
+          data-testid="linkedin-gif"
         />
       </a>
       <a href="https://github.com/kenneth256" target="_blank">
-        <img src="assets/icons/git.gif" alt="GitHub" class="socicon" />
+        <img
+          src="assets/icons/git.gif"
+          alt="GitHub"
+          class="socicon"
+          data-testid="github-gif"
+        />
+      </a>
+      <a href="mailto:kennethdavid256@gmail.com" target="_blank" data-testid='kennethdavid256@gmail.com'>
+        <img
+          src="assets/icons/gmail.gif"
+          alt="Email"
+          class="socicon"
+          data-testid="gmail-gif"
+        />
       </a>
     </div>
 
     <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
+    <i class="scroll-up" id="scroll-up" data-testid="scroll-up">
+      <img
         src="assets/icons/arrowup.gif"
         class="socicon up-arrow"
         alt="scroll-up"
-    /></i>
-    <footer>
-      <div class="links hng">
-        <a href="scrapeanyweb.site" target="_blank" style="margin-right:10rem;">scrapeanyweb</a>
-        <a href="https://hng.tech/learn" target="_blank">HNG Learn</a
+        data-testid="scroll-up-icon"
+      />
+    </i>
+    <footer data-testid="footer">
+      <div class="links hng" data-testid="links">
+        <a href="scrapeanyweb.site" target="_blank" style="margin-right: 10rem"
+          >scrapeanyweb</a
+        >
+        <a href="https://hng.tech/learn" target="_blank">HNG Learn</a>
       </div>
-      <p class="copy">&copy; Copyright 2024</p>
-      <p class="copy">
+      <p class="copy" data-testid="copy">&copy; Copyright 2024</p>
+      <p class="copy" data-testid="copy">
         Built with &#x2661; by
         <a href="https://twitter.com/kenneth" target="_blank">Kenneth David</a>
       </p>
