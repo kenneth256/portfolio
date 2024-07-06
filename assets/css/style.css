@@ -123,7 +123,26 @@ display: flex;
     line-height: var(--line-height);
     padding: 0.4rem 0;
   }
-
+.goals {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+.goals h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+.goals ol li {
+  padding: 0.2rem 0;
+  list-style-type: none;
+  text-align: left;
+  margin-left: 20rem;
+  line-height: var(--line-height);
+}
+.goals p {
+  line-height: var(--line-height);
+  text-align: center;
+  display: none;
+}
   .skills {
     max-width: 67.75rem;
     margin: auto;
@@ -350,7 +369,7 @@ footer {
     max-width: 23.75rem;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .hero img {
     height: 37.5rem;
     width: 23rem;
@@ -367,4 +386,5 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+  
 } 
