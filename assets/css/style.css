@@ -339,6 +339,7 @@ footer {
   .hero img {
         height: 35.0rem;
         width: 30rem;
+        border-radius: 5px;
     }
 
   .bio {
@@ -391,3 +392,7 @@ footer {
   }
   
 } 
+.links {
+  justify-content: space-between;
+  display: flex;
+}
