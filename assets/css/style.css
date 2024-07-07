@@ -126,6 +126,10 @@ display: flex;
 .goals {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  border-radius: 6px;
+    box-shadow: 0 2px 15px var(--primary-shadow);
+    width: 45rem;
+    margin: auto;
 }
 .goals h2 {
   margin-bottom: var(--bottom-margin);
@@ -135,7 +139,6 @@ display: flex;
   padding: 0.2rem 0;
   list-style-type: none;
   text-align: left;
-  margin-left: 20rem;
   line-height: var(--line-height);
 }
 .goals p {
